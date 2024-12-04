@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Futurista</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: #d3d3f7;
+      font-family: 'Poppins', sans-serif;
+    }
+    header {
+      background: #2a2a40;
+      padding: 10px 0;
+      border-bottom: 1px solid #5a5abf;
+    }
+    header .navbar-brand {
+      color: #5a5abf;
+      font-weight: bold;
+    }
+    header .navbar-nav .nav-link {
+      color: #d3d3f7;
+      margin-right: 10px;
+    }
+    header .navbar-nav .nav-link:hover {
+      color: #5a5abf;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .card {
+      background: #2a2a40;
+      border: 1px solid #5a5abf;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    }
+    .btn-primary {
+      background: #5a5abf;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #6a6adf;
+    }
+    footer {
+      background: #1e1e2f;
+      color: #5a5abf;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      border-top: 1px solid #5a5abf;
+    }
+    .container > h2 {
+      margin-bottom: 30px;
+    }
+    .row.g-4 > * {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">Futurista</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="inicio" class="text-center py-5">
+    <div class="container">
+      <h2 class="mb-4">Bem-vindo ao Futuro</h2>
+      <p class="lead">Descubra inovações tecnológicas que vão transformar sua vida.</p>
+      <a href="#servicos" class="btn btn-primary mt-3">Saiba Mais</a>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/slide1.jpg" class="d-block w-100" alt="Imagem Futurista 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slide2.jpg" class="d-block w-100" alt="Imagem Futurista 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slide3.jpg" class="d-block w-100" alt="Imagem Futurista 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Services -->
+  <section id="servicos" class="container py-5">
+    <h2 class="text-center">Nossos Serviços</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Consultoria Tecnológica</h5>
+            <p class="card-text">Nossa equipe oferece soluções personalizadas para transformar seu negócio.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Desenvolvimento de Software</h5>
+            <p class="card-text">Criamos aplicativos e sistemas que atendem às suas necessidades.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Análise de Dados</h5>
+            <p class="card-text">Transforme dados em insights valiosos para decisões estratégicas.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contato" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Entre em Contato</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Seu Nome" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Seu Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Sua Mensagem" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Gabriel Dal Prá. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
